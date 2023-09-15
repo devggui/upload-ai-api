@@ -17,7 +17,6 @@ Content-Type: audio/mpeg
 #@nama create transcription
 POST http://localhost:3333/videos/4206fc54-7c21-434a-afff-82d81eb6907b/transcription
 Content-Type: application/json
-Authorization: Bearer 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
 
 {
   "prompt": "rest"
