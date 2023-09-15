@@ -40,12 +40,12 @@ npm install
 Windows: 
 ```
 echo > .env
-cp .env.example .env
+cp .env-example .env
 ```
 Linux: 
 ```
 touch .env
-cp .env.example .env
+cp .env-example .env
 ``` 
 5  Crie uma chave de acesso para a API da OpenAi
 
