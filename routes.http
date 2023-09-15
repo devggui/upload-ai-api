@@ -15,11 +15,11 @@ Content-Type: audio/mpeg
 
 ###
 #@nama create transcription
-POST http://localhost:3333/videos/41d561b0-691b-4c06-a5a2-4bb5faf898ba/transcription
+POST http://localhost:3333/videos/a25d0bb2-f1e6-454d-baad-9982146c767d/transcription
 Content-Type: application/json
 
 {
-  "prompt": "hinos, gospel"
+  "prompt": "rest"
 }
 
 ###
