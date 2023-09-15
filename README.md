@@ -65,7 +65,7 @@ npx prisma generate
 ``` 
 8  Rode as migrations com o comando
 ``` 
-npx prisma migrate up --experimental
+npx prisma migrate dev
 ``` 
 9  Rode o projeto com o comando
 ``` 
