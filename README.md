@@ -7,11 +7,6 @@
 
 > Servidor da aplicação para upload de videos utilizando inteligência artificial realizado no desafio da NLW AI da [Rocketseat](app.rocketseat.com.br)
 
-<div style="width:100%; display:flex; align-items:center; gap:16px">
-<img src="./public/preview/desktop-preview.png" width="100%">
-<img src="./public/preview/mobile-preview.png" width="30%">
-</div>
-
 ## Detalhes do aplicativo
 
 - Esse projeto é o servidor para armazenar e trafegar as informações referente ao desafio da NLW AI: [Desafio](https://github.com/devggui/upload-ai-web).
@@ -23,7 +18,7 @@ Nele foi utilizado tecnologias como Prisma para manipuçação dos dados, fastif
 - [x] - Requisições com Fastify
 - [x] - Manipuçação dos dados com o ORM Prisma 
 - [x] - Consumo a API da OpenAI
-- [x] - Validação com ZOD
+- [x] - Validação com Zod
 
 ## 💻 Como usar o projeto
 Para gerar uma cópia do projeto e implementar as suas melhorias, esteja em um computador com Node Js instalado e siga as etapas abaixo:
@@ -40,12 +35,40 @@ cd upload-ai-web
 ```
 npm install
 ```
-4  Rode o projeto com o comando
+4  Crie um arquivo .env e copie o conteúdo do arquivo .env-example com o comando
 ```
+Windows: 
+echo > .env
+cp .env.example .env
+
+Linux: 
+touch .env
+cp .env.example .env
+``` 
+5  Adicionar a variável de ambiente de acordo com o seu projeto no arquivo .env
+Para criar uma chave de acesso para a API, siga os passos:
+-> Entrar no site da [OpenAi](https://platform.openai.com)
+-> Clique nas opções da conta
+-> Clique em View API keys
+-> Clique em + Create new secret key
+``` 
+DATABASE_URL="SUA VARIÁVEL DE AMBIENTE AQUI"
+OPENAI_KEY="SUA CHAVE DE ACESSO PARA A API DA OPENAI"
+``` 
+6  Faça a importação do Schema do projeto com o comando
+``` 
+npx prisma generate
+``` 
+7  Rode as migrations com o comando
+``` 
+npx prisma migrate up --experimental
+``` 
+8  Rode o projeto com o comando
+``` 
 npm run dev
 ``` 
-5  Ou acesse o aplicativo através do website [api.upload.ai]() 
-
+Utilize o arquivo routes.http para testar as requisições caso necessário.
+Para usa-lo, instale a extensão do REST Client direto no [VSCode](https://code.visualstudio.com)
 
 ## 🌐 Links úteis
 [NodeJS](https://nodejs.org/en/download)  

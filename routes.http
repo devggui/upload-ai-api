@@ -19,7 +19,7 @@ POST http://localhost:3333/videos/a25d0bb2-f1e6-454d-baad-9982146c767d/transcrip
 Content-Type: application/json
 
 {
-  "prompt": "rest"
+  "prompt": ""
 }
 
 ###
@@ -28,7 +28,7 @@ POST http://localhost:3333/ai/complete
 Content-Type: application/json
 
 {
-  "videoId": "41d561b0-691b-4c06-a5a2-4bb5faf898ba",
+  "videoId": "...",
   "template": "Gere um resumo sucinto da transcrição do vídeo informada a seguir: '''{transcription}'''",
   "temperatura": 0.5
 }
