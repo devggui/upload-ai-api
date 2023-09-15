@@ -40,12 +40,12 @@ npm install
 Windows: 
 ```
 echo > .env
-cp .env.example .env
+cp .env-example .env
 ```
 Linux: 
 ```
 touch .env
-cp .env.example .env
+cp .env-example .env
 ``` 
 5  Crie uma chave de acesso para a API da OpenAi
 
@@ -67,7 +67,11 @@ npx prisma generate
 ``` 
 npx prisma migrate dev
 ``` 
-9  Rode o projeto com o comando
+9  Crie uma pasta chamada tmp na raiz do projeto
+``` 
+mkdir tmp
+``` 
+10  Rode o projeto com o comando
 ``` 
 npm run dev
 ``` 
