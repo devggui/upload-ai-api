@@ -9,7 +9,7 @@
 
 ## Detalhes do aplicativo
 
-- Esse projeto é o servidor para armazenar e trafegar as informações referente ao desafio da NLW AI: [Desafio](https://github.com/devggui/upload-ai-web).
+- Esse projeto é o servidor para armazenar e trafegar as informações referente ao desafio da NLW AI: [Desafio](https://github.com/devggui/upload-ai-web).</br>
 Nele foi utilizado tecnologias como Prisma para manipuçação dos dados, fastify para comunicação entre a aplicação e o banco de dados, zod para validação das requisições e sqlite como banco de dados local.
 
 
@@ -36,34 +36,38 @@ cd upload-ai-web
 npm install
 ```
 4  Crie um arquivo .env e copie o conteúdo do arquivo .env-example com o comando
-```
+
 Windows: 
+```
 echo > .env
 cp .env.example .env
-
+```
 Linux: 
+```
 touch .env
 cp .env.example .env
 ``` 
-5  Adicionar a variável de ambiente de acordo com o seu projeto no arquivo .env
-Para criar uma chave de acesso para a API, siga os passos:
--> Entrar no site da [OpenAi](https://platform.openai.com)
--> Clique nas opções da conta
--> Clique em View API keys
--> Clique em + Create new secret key
+5  Crie uma chave de acesso para a API da OpenAi
+
+- [x] - Entrar no site da [OpenAi](https://platform.openai.com)
+- [x] - Clique nas opções da conta
+- [x] - Clique em View API keys
+- [x] - Clique em + Create new secret key
+
+6  Adicionar a variável de ambiente de acordo com o seu projeto no arquivo .env
 ``` 
-DATABASE_URL="SUA VARIÁVEL DE AMBIENTE AQUI"
-OPENAI_KEY="SUA CHAVE DE ACESSO PARA A API DA OPENAI"
+DATABASE_URL="url para o seu banco de dados aqui"
+OPENAI_KEY="sua chave de acesso da api aqui"
 ``` 
-6  Faça a importação do Schema do projeto com o comando
+7  Faça a importação do Schema do projeto com o comando
 ``` 
 npx prisma generate
 ``` 
-7  Rode as migrations com o comando
+8  Rode as migrations com o comando
 ``` 
 npx prisma migrate up --experimental
 ``` 
-8  Rode o projeto com o comando
+9  Rode o projeto com o comando
 ``` 
 npm run dev
 ``` 
@@ -73,8 +77,10 @@ Para usa-lo, instale a extensão do REST Client direto no [VSCode](https://code.
 ## 🌐 Links úteis
 [NodeJS](https://nodejs.org/en/download)  
 [Prisma](https://www.prisma.io)  
-[Fastify](https://fastify.dev)
-[Zod](https://zod.dev)
+[Fastify](https://fastify.dev)  
+[Zod](https://zod.dev)  
+[OpenAi](https://platform.openai.com) 
+
 
 ## 🧑‍💻 Guilherme Henrique
 
