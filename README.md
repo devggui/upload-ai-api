@@ -29,7 +29,7 @@ git clone https://github.com/devggui/upload-ai-api
 ``` 
 2  Acesse o projeto pelo terminal com o comando 
 ```
-cd upload-ai-web
+cd upload-ai-api
 ```  
 3  Instale as dependências necessárias com o comando
 ```
